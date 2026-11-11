@@ -82,14 +82,14 @@ header h2 {
   color:#444; 
   line-height:1.5;
 }
-@media (max-width:600px){}
+@media (max-width:600px){
   .review-box{
     flex-direction:column;
   }
   .review-card{
     width:100%;
     padding:25px 18px;
-  }
+  }}
 .hero { 
   background: #FF4D8D;
   color: white;
