@@ -49,19 +49,6 @@ header h2 {
   text-align:center;
   box-sizing:border-box;
 }
-@media (min-width:601px){
-  .reviews-scroll{
-    justify-content:center;
-    flex-wrap:wrap;
-    overflow-x:visible;
-  }
-  .review-item{
-    width:32%;
-    min-width:0;
-    flex-shrink:1;
-  }
-}
-
 @media (max-width:600px){
   .reviews-scroll{
     justify-content:flex-start;
