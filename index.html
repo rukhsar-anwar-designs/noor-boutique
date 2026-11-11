@@ -1,111 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noor Boutique - Winter Collection 2026</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* ===== REVIEWS - FINAL FIX ===== */
 
-  <header>
-    <h2>NOOR BOUTIQUE</h2>
-    <a href="">Flat Offers</a>
-  </header>
+.reviews-scroll{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+  overflow-x:visible;
+  max-width:1000px;
+  margin:0 auto;
+  padding:10px 15px 15px 15px;
+  box-sizing:border-box;
+}
 
-  <section class="hero">
-    <h1>New Winter Collection 2026</h1>
-    <p>Flat 20% OFF - Premium Ladies Suits</p>
-    <p id="timer">Offer Ends In: 02:00:00</p>
-    <a href="https://wa.me/923442730466" class="btn-big">Order on WhatsApp</a>
-  </section>
+.review-item{
+  background:white;
+  width:32%;
+  min-width:0;
+  flex-shrink:1;
+  padding:20px 12px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  text-align:center;
+  box-sizing:border-box;
+}
 
-  <section class="products">
-    <h2>Our Best Collection</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1773439878533-77383b20577c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=500" alt="Suit 1">
-        <h3>Royal Pink Suit</h3>
-        <p>Rs. 2,999 <del>Rs. 3,800</del></p>
-        <button onclick="orderNow('Royal Pink Suit - Rs.2999')">Order on WhatsApp</button>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1756483502814-fd570db8d4c7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=500" alt="Suit 2">
-        <h3>Emerald Green Suit</h3>
-        <p>Rs. 3,499 <del>Rs. 4,200</del></p>
-        <button onclick="orderNow('Emerald Green Suit - Rs.3499')">Order on WhatsApp</button>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1733470381591-c5dfb9df3c3d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D?w=500" alt="Suit 3">
-        <h3>Luxury Black Suit</h3>
-        <p>Rs. 4,200 <del>Rs. 5,000</del></p>
-        <button onclick="orderNow('Luxury Black Suit - Rs.4200')">Order on WhatsApp</button>
-      </div>
-    </div>
-  </section>
+/* SIRF COMPUTER PE - 601 se bari screen */
+@media (min-width:601px){
+  .reviews-scroll{
+    justify-content:center;
+    flex-wrap:wrap;
+    overflow-x:visible;
+  }
+  .review-item{
+    width:32%;
+    min-width:0;
+    flex-shrink:1;
+  }
+}
 
-<section class="happy-section">
-  <h2>Happy Customers</h2>
-  <div class="review-box">
-
-    <div class="review-card">
-      <div class="profile-circle pink-bg">A</div>
-      <p class="review-name">Ayesha Khan</p>
-      <p class="review-city">📍 Lahore • ✅ Verified Buyer</p>
-      <p class="review-stars">⭐⭐⭐⭐</p>
-      <p class="review-text">"Suit ka kapra bohat acha hai, bilkul picture jaisa aaya."</p>
-    </div>
-
-    <div class="review-card">
-      <div class="profile-circle green-bg">F</div>
-      <p class="review-name">Fatima Ali</p>
-      <p class="review-city">📍 Karachi • ✅ Verified Buyer</p>
-      <p class="review-stars">⭐⭐⭐⭐⭐</p>
-      <p class="review-text">"2 din me delivery mil gayi. Packing bohat achi thi!"</p>
-    </div>
-
-    <div class="review-card">
-      <div class="profile-circle purple-bg">M</div>
-      <p class="review-name">Mahnoor S.</p>
-      <p class="review-city">📍 Multan • ✅ Verified Buyer</p>
-      <p class="review-stars">⭐⭐⭐⭐</p>
-      <p class="review-text">"Green wala suit liya tha, sab ne bohat tareef ki."</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- FOOTER HTML START -->
-<footer class="footer">
-  <div class="footer-box">
-
-    <h2 class="footer-logo">NOOR BOUTIQUE</h2>
-    <p class="footer-tagline">Premium Ladies Suits • Cash on Delivery • All Over Pakistan</p>
-
-    <div class="footer-links">
-      <a href="#">Home</a>
-      <a href="#">Best Collection</a>
-      <a href="#">Why Choose Us</a>
-      <a href="#">Reviews</a>
-    </div>
-
-    <div class="footer-contact">
-      <p>📍 Multan, Pakistan</p>
-      <p>📱 WhatsApp: 03442730466</p>
-      <p>✉️ noorboutique@gmail.com</p>
-    </div>
-
-    <a href="https://wa.me/923442730466" class="footer-btn">Order on WhatsApp</a>
-
-    <hr class="footer-line">
-
-    <p class="footer-copy">© 2026 Noor Boutique. All Rights Reserved.</p>
-    <p class="footer-credit">Demo Project by Rukhsar Anwar</p>
-
-  </div>
-</footer>
-<!-- FOOTER HTML END -->
-
-<script src="script.js"></script>
-</body>
-</html>
+/* SIRF MOBILE PE - 600 se choti screen */
+@media (max-width:600px){
+  .reviews-scroll{
+    justify-content:flex-start;
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    padding:10px 15px 15px 15px;
+  }
+  .review-item{
+    width:85%;
+    min-width:85%;
+    flex-shrink:0;
+    scroll-snap-align:center;
+    padding:25px 18px;
+  }
+  .r-name{ font-size:18px; }
+  .r-text{ font-size:15px; }
+}
