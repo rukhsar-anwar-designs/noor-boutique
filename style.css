@@ -19,29 +19,69 @@ header h2 {
   color: white;
   text-decoration: none; 
   padding: 10px 18px; border-radius: 25px; font-weight: bold; }
+
 .happy-section{
   width:100%;
   text-align:center;
   padding:20px 10px;
   box-sizing:border-box;
 }
-.review-box{
+
+.reviews-scroll{
   display:flex;
   gap:15px;
   justify-content:center;
+  flex-wrap:wrap;
+  overflow-x:visible;
   max-width:1000px;
   margin:0 auto;
+  padding:10px 15px 15px 15px;
+  box-sizing:border-box;
 }
-.review-card{
+.review-item{
   background:white;
   width:32%;
+  min-width:0;
+  flex-shrink:1;
   padding:20px 12px;
   border-radius:15px;
   box-shadow:0 4px 15px rgba(0,0,0,0.08);
   text-align:center;
   box-sizing:border-box;
 }
-.profile-circle{
+@media (min-width:601px){
+  .reviews-scroll{
+    justify-content:center;
+    flex-wrap:wrap;
+    overflow-x:visible;
+  }
+  .review-item{
+    width:32%;
+    min-width:0;
+    flex-shrink:1;
+  }
+}
+
+@media (max-width:600px){
+  .reviews-scroll{
+    justify-content:flex-start;
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    padding:10px 15px 15px 15px;
+  }
+  .review-item{
+    width:85%;
+    min-width:85%;
+    flex-shrink:0;
+    scroll-snap-align:center;
+    padding:25px 18px;
+  }
+  .r-name{ font-size:18px; }
+  .r-text{ font-size:15px; }
+}
+.circle-letter{
   width:60px;
   height:60px;
   color:white;
@@ -53,44 +93,13 @@ header h2 {
   font-weight:bold;
   margin:0 auto;
 }
-.pink-bg { 
-  background:#ff4d8d; 
-}
-.green-bg { 
-  background:#00b894;
-}
-.purple-bg { 
-  background:#6c5ce7;
-}
-.review-name{
-  font-weight:bold;
-  margin:10px 0 0 0;
-  font-size:16px;
-}
-.review-city{ 
-  color:gray; 
-  font-size:13px;
-  margin:4px 0;
-}
-.review-stars{
-  color:#ffb400;
-  font-size:18px;
-  margin:8px 0;
-}
-.review-text{
-  font-size:14px;
-  color:#444; 
-  line-height:1.5;
-}
-@media (max-width:600px){
-  .review-box{
-    flex-direction:column;
-  }
-  .review-card{
-    width:100%;
-    padding:25px 18px;
-  }
-}
+.pink-c{ background:#ff4d8d; }
+.green-c{ background:#00b894; }
+.purple-c{ background:#6c5ce7; }
+.r-name{ font-weight:bold; margin:10px 0 0 0; font-size:16px; }
+.r-city{ color:gray; font-size:13px; margin:4px 0; }
+.r-stars{ color:#ffb400; font-size:18px; margin:8px 0; }
+.r-text{ font-size:14px; color:#444; line-height:1.5; }
 .hero { 
   background: #FF4D8D;
   color: white;
@@ -144,8 +153,6 @@ header h2 {
   border-radius: 20px;
   cursor: pointer;
   margin-top: 10px; }
-
-/* FOOTER CSS START */
 .footer{
   background: #1a1a1a;
   color: white;
@@ -221,4 +228,3 @@ header h2 {
   color: #ff4d8d;
   margin: 5px 0 0;
 }
-/* FOOTER CSS END */
