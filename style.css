@@ -7,19 +7,18 @@ header h2 { color: #FF4D8D; }
 .happy-section{
   width:100%;
   text-align:center;
-  padding:20px 5px;
-  overflow:hidden;
+  padding:20px 10px;
+  box-sizing:border-box;
 }
 .happy-section h2{
   text-align:center;
-  width:100%;
+  font-size:26px;
 }
 .review-box{
   display:flex;
   flex-direction:row;
-  flex-wrap:nowrap;
-  gap:10px;
-  justify-content:space-between;
+  gap:15px;
+  justify-content:center;
   width:100%;
   max-width:1000px;
   margin:0 auto;
@@ -29,33 +28,52 @@ header h2 { color: #FF4D8D; }
 .review-card{
   background:white;
   width:32%;
-  min-width:0;
-  flex:1;
-  padding:15px 8px;
+  padding:20px 12px;
   border-radius:15px;
   box-shadow:0 4px 15px rgba(0,0,0,0.08);
   text-align:center;
   box-sizing:border-box;
 }
 .profile-circle{
-  width:50px;
-  height:50px;
+  width:60px;
+  height:60px;
   color:white;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:20px;
+  font-size:24px;
   font-weight:bold;
   margin:0 auto;
 }
 .pink-bg{ background:#ff4d8d; }
 .green-bg{ background:#00b894; }
 .purple-bg{ background:#6c5ce7; }
-.review-name{ font-weight:bold; margin:8px 0 0 0; font-size:14px; }
-.review-city{ color:gray; font-size:11px; margin:2px 0; }
-.review-stars{ color:#ffb400; font-size:15px; margin:6px 0; }
-.review-text{ font-size:12px; color:#444; line-height:1.4; }
+.review-name{ font-weight:bold; margin:10px 0 0 0; font-size:16px; }
+.review-city{ color:gray; font-size:13px; margin:4px 0; }
+.review-stars{ color:#ffb400; font-size:18px; margin:8px 0; }
+.review-text{ font-size:14px; color:#444; line-height:1.5; }
+
+/* MOBILE KE LIYE - YAHI ASAL FIX HAI */
+@media (max-width:600px){
+  .review-box{
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    scroll-snap-type:x mandatory;
+    padding:10px;
+    gap:12px;
+  }
+  .review-card{
+    min-width:85%;
+    width:85%;
+    flex-shrink:0;
+    scroll-snap-align:center;
+    padding:25px 18px;
+  }
+  .review-name{ font-size:18px; }
+  .review-text{ font-size:15px; }
+}
 </style>
 .btn, .btn-big { background: #25D366; color: white; text-decoration: none; padding: 10px 18px; border-radius: 25px; font-weight: bold; }
 .hero { background: #FF4D8D; color: white; text-align: center; padding: 60px 20px; }
