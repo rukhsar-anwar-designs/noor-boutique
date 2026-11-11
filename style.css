@@ -10,20 +10,12 @@ header h2 { color: #FF4D8D; }
   padding:20px 10px;
   box-sizing:border-box;
 }
-.happy-section h2{
-  text-align:center;
-  font-size:26px;
-}
 .review-box{
   display:flex;
-  flex-direction:row;
   gap:15px;
   justify-content:center;
-  width:100%;
   max-width:1000px;
   margin:0 auto;
-  padding:10px 5px;
-  box-sizing:border-box;
 }
 .review-card{
   background:white;
@@ -54,25 +46,14 @@ header h2 { color: #FF4D8D; }
 .review-stars{ color:#ffb400; font-size:18px; margin:8px 0; }
 .review-text{ font-size:14px; color:#444; line-height:1.5; }
 
-/* MOBILE KE LIYE - YAHI ASAL FIX HAI */
 @media (max-width:600px){
   .review-box{
-    overflow-x:auto;
-    flex-wrap:nowrap;
-    justify-content:flex-start;
-    scroll-snap-type:x mandatory;
-    padding:10px;
-    gap:12px;
+    flex-direction:column;
   }
   .review-card{
-    min-width:85%;
-    width:85%;
-    flex-shrink:0;
-    scroll-snap-align:center;
+    width:100%;
     padding:25px 18px;
   }
-  .review-name{ font-size:18px; }
-  .review-text{ font-size:15px; }
 }
 </style>
 .btn, .btn-big { background: #25D366; color: white; text-decoration: none; padding: 10px 18px; border-radius: 25px; font-weight: bold; }
