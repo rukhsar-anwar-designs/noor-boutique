@@ -1,4 +1,6 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background: #fff; position: sticky; top: 0; }
+header h2 { color: #FF4D8D; }
 <style>
 .happy-section{
   width:100%;
@@ -53,8 +55,6 @@
 .review-stars{ color:#ffb400; font-size:15px; margin:6px 0; }
 .review-text{ font-size:12px; color:#444; line-height:1.4; }
 </style>
-header { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background: #fff; position: sticky; top: 0; }
-header h2 { color: #FF4D8D; }
 .btn, .btn-big { background: #25D366; color: white; text-decoration: none; padding: 10px 18px; border-radius: 25px; font-weight: bold; }
 .hero { background: #FF4D8D; color: white; text-align: center; padding: 60px 20px; }
 .hero h1 { font-size: 32px; margin-bottom: 10px; }
