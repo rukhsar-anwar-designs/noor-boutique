@@ -1,17 +1,5 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-header { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background: #fff; position: sticky; top: 0; }
-header h2 { color: #FF4D8D; }
-.btn, .btn-big { background: #25D366; color: white; text-decoration: none; padding: 10px 18px; border-radius: 25px; font-weight: bold; }
-.hero { background: #FF4D8D; color: white; text-align: center; padding: 60px 20px; }
-.hero h1 { font-size: 32px; margin-bottom: 10px; }
-.hero p { margin-bottom: 10px; }
-.btn-big { display: inline-block; margin-top: 15px; background: #25D366; }
-.products { padding: 40px 20px; text-align: center; }
-.grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
-.card { width: 280px; border: 1px solid #eee; border-radius: 12px; overflow: hidden; padding-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
-.card img { width: 100%; height: 300px; object-fit: cover; }
-.card h3 { margin: 10px 0 5px; }
-.card button { background: #FF4D8D; color: white; border: none; padding: 10px 15px; border-radius: 20px; cursor: pointer; margin-top: 10px; }
+<style>
 .review-box{
   display:flex;
   gap:15px;
@@ -42,24 +30,24 @@ header h2 { color: #FF4D8D; }
 .pink-bg{ background:#ff4d8d; }
 .green-bg{ background:#00b894; }
 .purple-bg{ background:#6c5ce7; }
-.review-name{
-  font-weight:bold;
-  margin:8px 0 0 0;
-}
-.review-city{
-  color:gray;
-  font-size:12px;
-  margin:2px 0;
-}
-.review-stars{
-  color:#ffb400;
-  font-size:18px;
-  margin:8px 0;
-}
-.review-text{
-  font-size:14px;
-  color:#444;
-}
+.review-name{ font-weight:bold; margin:8px 0 0 0; }
+.review-city{ color:gray; font-size:12px; margin:2px 0; }
+.review-stars{ color:#ffb400; font-size:18px; margin:8px 0; }
+.review-text{ font-size:14px; color:#444; }
+</style>
+header { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; background: #fff; position: sticky; top: 0; }
+header h2 { color: #FF4D8D; }
+.btn, .btn-big { background: #25D366; color: white; text-decoration: none; padding: 10px 18px; border-radius: 25px; font-weight: bold; }
+.hero { background: #FF4D8D; color: white; text-align: center; padding: 60px 20px; }
+.hero h1 { font-size: 32px; margin-bottom: 10px; }
+.hero p { margin-bottom: 10px; }
+.btn-big { display: inline-block; margin-top: 15px; background: #25D366; }
+.products { padding: 40px 20px; text-align: center; }
+.grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+.card { width: 280px; border: 1px solid #eee; border-radius: 12px; overflow: hidden; padding-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.card img { width: 100%; height: 300px; object-fit: cover; }
+.card h3 { margin: 10px 0 5px; }
+.card button { background: #FF4D8D; color: white; border: none; padding: 10px 15px; border-radius: 20px; cursor: pointer; margin-top: 10px; }
 
 /* FOOTER CSS START */
 .footer{
